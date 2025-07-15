@@ -34,13 +34,13 @@
   }
   
   .txt1 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 12px;
   }
   
   .txt2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: gray;
     margin-bottom: 0;
   }
@@ -62,7 +62,7 @@
     text-decoration: none;
   }
   
-  /* Optional: responsive tweak for mobile */
+  
   @media (max-width: 375px) {
     .container {
       width: 90%;
