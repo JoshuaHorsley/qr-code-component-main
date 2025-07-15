@@ -9,7 +9,7 @@ body{
     margin-right: auto;
     margin-top: 100px;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,4 +39,38 @@ body{
     ;
     font-size: 11px;
     text-align: center;
+}
+
+.attribution a {
+    color:hsl(212, 54%, 55%)
+}
+
+@media (min-width: 1440px) {
+    .box {
+        max-width: 350px;
+        margin-top: 120px;
+    }
+
+    .txt1 {
+        font-size: 1.3rem;
+    }
+
+    .txt2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .box {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .txt1 {
+        font-size: 1rem;
+    }
+
+    .txt2 {
+        font-size: 0.75rem;
+    }
 }
