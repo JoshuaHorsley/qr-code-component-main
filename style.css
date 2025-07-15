@@ -44,6 +44,11 @@
     color: gray;
     margin-bottom: 0;
   }
+
+  .txt1, .txt2 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
   
   .attribution {
     font-size: 11px;
