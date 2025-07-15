@@ -1,85 +1,74 @@
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Outfit', sans-serif;
     background-color: hsl(212, 45%, 89%);
-}
-
-.container {
-    width: 220px;
-    height: 350px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .container {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.qrcode {
-    width: 200px;
-    height: 200px;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-}
-
-.txt1 {
+    width: 320px;
+    padding: 16px;
     text-align: center;
-    font-size: 15px;
-    font-family: parkinsans, serif;
-}
-
-.txt2 {
-    text-align: center;
-    font-size: 10px;
-    font-family: parkinsans, serif;
+  }
+  
+  .qrcode {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .txt1 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .txt2 {
+    font-size: 0.9rem;
     color: gray;
-}
-
-.attribution {
-    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  .attribution {
     font-size: 11px;
     text-align: center;
-}
-
-.attribution a {
+    margin-top: 20px;
+    color: hsl(228, 12%, 44%);
+  }
+  
+  .attribution a {
     color: hsl(212, 54%, 55%);
-}
-
-
-@media (min-width: 1440px) {
+    text-decoration: none;
+  }
+  
+  /* Optional: responsive tweak for mobile */
+  @media (max-width: 375px) {
     .container {
-        width: 350px;
-        height: 420px;
-        margin-top: 120px;
+      width: 90%;
     }
-    
-    .qrcode {
-        width: 280px;
-        height: 280px;
-        margin-left: 35px;
-    }
-    
+  
     .txt1 {
-        font-size: 1.3rem;
-        padding: 0 20px;
+      font-size: 1rem;
     }
-    
+  
     .txt2 {
-        font-size: 1rem;
-        padding: 0 20px;
+      font-size: 0.8rem;
     }
-}
-
-@media (max-width: 375px) {
-    .container {
-        margin-top: 50px;
-        padding: 10px;
-    }
-    
-    .txt1 {
-        font-size: 1rem;
-    }
-    
-    .txt2 {
-        font-size: 0.75rem;
-    }
-}
+  }
+  
